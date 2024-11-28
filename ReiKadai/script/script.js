@@ -8,7 +8,7 @@ new Vue({
       // カードリストをわんちゃんで初期化 (名前と画像パスを定義)
       cards: Array.from({ length: 30 }, (_, i) => ({
         name: `カード${i + 1}`,
-        image: `../img/dog/card${i + 1}.png` // 動的に画像を読み込み
+        image: `./img/dog/card${i + 1}.png` // 動的に画像を読み込み
       })),
       selectedCards: []     // 引いたカードを格納
     },
@@ -29,14 +29,14 @@ new Vue({
           // カードリスト (名前と画像パスを再定義)
           this.cards = Array.from({ length: 30 }, (_, i) => ({
             name: `カード${i + 1}`,
-            image: `../img/cat/card${i + 1}.png`
+            image: `./img/cat/card${i + 1}.png`
           }));
         } else {
           this.animal = 'わんちゃん';
           // カードリスト (名前と画像パスを再定義)
           this.cards = Array.from({ length: 30 }, (_, i) => ({
             name: `カード${i + 1}`,
-            image: `../img/dog/card${i + 1}.png`
+            image: `./img/dog/card${i + 1}.png`
           }));
         }
       }
